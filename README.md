@@ -1,29 +1,22 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A C# MVC.Net app that facilitates the demonstration of SCSS
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Allows for setting up code samples ahead of time
+* Version: 1.0.0
+
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Requires IIS
+* Run from Visual Studio 2012+
 
 ### Contribution guidelines ###
 
-* Writing tests
 * Code review
-* Other guidelines
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* mr.steven.miller@gmail.com
