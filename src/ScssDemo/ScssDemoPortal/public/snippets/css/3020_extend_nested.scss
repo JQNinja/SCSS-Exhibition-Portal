@@ -1,0 +1,18 @@
+﻿.section {
+    margin: 5px;
+    color: orange;
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .heading {
+        font-weight: bold;
+        font-size: 2em;
+    }
+}
+
+.special-section {
+    @extend .section;
+    background-color: limegreen;
+}

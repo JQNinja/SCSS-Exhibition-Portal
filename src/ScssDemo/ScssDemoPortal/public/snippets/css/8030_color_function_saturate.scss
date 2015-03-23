@@ -1,0 +1,9 @@
+﻿$color: #CD853F;
+
+.saturate{
+    background-color: saturate($color, 25%);
+}
+
+.desaturate{
+    background-color: desaturate($color, 25%);
+}

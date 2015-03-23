@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC7B8CEE-924B-4E7E-966F-6EEC27BF3B71}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScssDemoPortal</RootNamespace>
+    <AssemblyName>ScssDemoPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LibSass.x64">
+      <HintPath>..\packages\libsassnet.x64.3.0.1.1\lib\net40\LibSass.x64.dll</HintPath>
+    </Reference>
+    <Reference Include="libsassnet">
+      <HintPath>..\packages\libsassnet.x64.3.0.1.1\lib\net40\libsassnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\ApplicationContainer.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StyleController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\ViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="public\control\ace\ace.js" />
+    <Content Include="public\control\ace\emmet.js" />
+    <Content Include="public\control\ace\ext-beautify.js" />
+    <Content Include="public\control\ace\ext-chromevox.js" />
+    <Content Include="public\control\ace\ext-elastic_tabstops_lite.js" />
+    <Content Include="public\control\ace\ext-emmet.js" />
+    <Content Include="public\control\ace\ext-error_marker.js" />
+    <Content Include="public\control\ace\ext-keybinding_menu.js" />
+    <Content Include="public\control\ace\ext-language_tools.js" />
+    <Content Include="public\control\ace\ext-linking.js" />
+    <Content Include="public\control\ace\ext-modelist.js" />
+    <Content Include="public\control\ace\ext-old_ie.js" />
+    <Content Include="public\control\ace\ext-searchbox.js" />
+    <Content Include="public\control\ace\ext-settings_menu.js" />
+    <Content Include="public\control\ace\ext-spellcheck.js" />
+    <Content Include="public\control\ace\ext-split.js" />
+    <Content Include="public\control\ace\ext-static_highlight.js" />
+    <Content Include="public\control\ace\ext-statusbar.js" />
+    <Content Include="public\control\ace\ext-textarea.js" />
+    <Content Include="public\control\ace\ext-themelist.js" />
+    <Content Include="public\control\ace\ext-whitespace.js" />
+    <Content Include="public\control\ace\keybinding-emacs.js" />
+    <Content Include="public\control\ace\keybinding-vim.js" />
+    <Content Include="public\control\ace\mode-abap.js" />
+    <Content Include="public\control\ace\mode-actionscript.js" />
+    <Content Include="public\control\ace\mode-ada.js" />
+    <Content Include="public\control\ace\mode-apache_conf.js" />
+    <Content Include="public\control\ace\mode-applescript.js" />
+    <Content Include="public\control\ace\mode-asciidoc.js" />
+    <Content Include="public\control\ace\mode-assembly_x86.js" />
+    <Content Include="public\control\ace\mode-autohotkey.js" />
+    <Content Include="public\control\ace\mode-batchfile.js" />
+    <Content Include="public\control\ace\mode-c9search.js" />
+    <Content Include="public\control\ace\mode-cirru.js" />
+    <Content Include="public\control\ace\mode-clojure.js" />
+    <Content Include="public\control\ace\mode-cobol.js" />
+    <Content Include="public\control\ace\mode-coffee.js" />
+    <Content Include="public\control\ace\mode-coldfusion.js" />
+    <Content Include="public\control\ace\mode-csharp.js" />
+    <Content Include="public\control\ace\mode-css.js" />
+    <Content Include="public\control\ace\mode-curly.js" />
+    <Content Include="public\control\ace\mode-c_cpp.js" />
+    <Content Include="public\control\ace\mode-d.js" />
+    <Content Include="public\control\ace\mode-dart.js" />
+    <Content Include="public\control\ace\mode-diff.js" />
+    <Content Include="public\control\ace\mode-django.js" />
+    <Content Include="public\control\ace\mode-dockerfile.js" />
+    <Content Include="public\control\ace\mode-dot.js" />
+    <Content Include="public\control\ace\mode-ejs.js" />
+    <Content Include="public\control\ace\mode-erlang.js" />
+    <Content Include="public\control\ace\mode-forth.js" />
+    <Content Include="public\control\ace\mode-ftl.js" />
+    <Content Include="public\control\ace\mode-gherkin.js" />
+    <Content Include="public\control\ace\mode-gitignore.js" />
+    <Content Include="public\control\ace\mode-glsl.js" />
+    <Content Include="public\control\ace\mode-golang.js" />
+    <Content Include="public\control\ace\mode-groovy.js" />
+    <Content Include="public\control\ace\mode-haml.js" />
+    <Content Include="public\control\ace\mode-handlebars.js" />
+    <Content Include="public\control\ace\mode-haskell.js" />
+    <Content Include="public\control\ace\mode-haxe.js" />
+    <Content Include="public\control\ace\mode-html.js" />
+    <Content Include="public\control\ace\mode-html_ruby.js" />
+    <Content Include="public\control\ace\mode-ini.js" />
+    <Content Include="public\control\ace\mode-jack.js" />
+    <Content Include="public\control\ace\mode-jade.js" />
+    <Content Include="public\control\ace\mode-java.js" />
+    <Content Include="public\control\ace\mode-javascript.js" />
+    <Content Include="public\control\ace\mode-json.js" />
+    <Content Include="public\control\ace\mode-jsoniq.js" />
+    <Content Include="public\control\ace\mode-jsp.js" />
+    <Content Include="public\control\ace\mode-jsx.js" />
+    <Content Include="public\control\ace\mode-julia.js" />
+    <Content Include="public\control\ace\mode-latex.js" />
+    <Content Include="public\control\ace\mode-less.js" />
+    <Content Include="public\control\ace\mode-liquid.js" />
+    <Content Include="public\control\ace\mode-lisp.js" />
+    <Content Include="public\control\ace\mode-livescript.js" />
+    <Content Include="public\control\ace\mode-logiql.js" />
+    <Content Include="public\control\ace\mode-lsl.js" />
+    <Content Include="public\control\ace\mode-lua.js" />
+    <Content Include="public\control\ace\mode-luapage.js" />
+    <Content Include="public\control\ace\mode-lucene.js" />
+    <Content Include="public\control\ace\mode-makefile.js" />
+    <Content Include="public\control\ace\mode-markdown.js" />
+    <Content Include="public\control\ace\mode-matlab.js" />
+    <Content Include="public\control\ace\mode-mel.js" />
+    <Content Include="public\control\ace\mode-mushcode.js" />
+    <Content Include="public\control\ace\mode-mysql.js" />
+    <Content Include="public\control\ace\mode-nix.js" />
+    <Content Include="public\control\ace\mode-objectivec.js" />
+    <Content Include="public\control\ace\mode-ocaml.js" />
+    <Content Include="public\control\ace\mode-pascal.js" />
+    <Content Include="public\control\ace\mode-perl.js" />
+    <Content Include="public\control\ace\mode-pgsql.js" />
+    <Content Include="public\control\ace\mode-php.js" />
+    <Content Include="public\control\ace\mode-plain_text.js" />
+    <Content Include="public\control\ace\mode-powershell.js" />
+    <Content Include="public\control\ace\mode-prolog.js" />
+    <Content Include="public\control\ace\mode-properties.js" />
+    <Content Include="public\control\ace\mode-protobuf.js" />
+    <Content Include="public\control\ace\mode-python.js" />
+    <Content Include="public\control\ace\mode-r.js" />
+    <Content Include="public\control\ace\mode-rdoc.js" />
+    <Content Include="public\control\ace\mode-rhtml.js" />
+    <Content Include="public\control\ace\mode-ruby.js" />
+    <Content Include="public\control\ace\mode-rust.js" />
+    <Content Include="public\control\ace\mode-sass.js" />
+    <Content Include="public\control\ace\mode-scad.js" />
+    <Content Include="public\control\ace\mode-scala.js" />
+    <Content Include="public\control\ace\mode-scheme.js" />
+    <Content Include="public\control\ace\mode-scss.js" />
+    <Content Include="public\control\ace\mode-sh.js" />
+    <Content Include="public\control\ace\mode-sjs.js" />
+    <Content Include="public\control\ace\mode-smarty.js" />
+    <Content Include="public\control\ace\mode-snippets.js" />
+    <Content Include="public\control\ace\mode-soy_template.js" />
+    <Content Include="public\control\ace\mode-space.js" />
+    <Content Include="public\control\ace\mode-sql.js" />
+    <Content Include="public\control\ace\mode-stylus.js" />
+    <Content Include="public\control\ace\mode-svg.js" />
+    <Content Include="public\control\ace\mode-tcl.js" />
+    <Content Include="public\control\ace\mode-tex.js" />
+    <Content Include="public\control\ace\mode-text.js" />
+    <Content Include="public\control\ace\mode-textile.js" />
+    <Content Include="public\control\ace\mode-toml.js" />
+    <Content Include="public\control\ace\mode-twig.js" />
+    <Content Include="public\control\ace\mode-typescript.js" />
+    <Content Include="public\control\ace\mode-vala.js" />
+    <Content Include="public\control\ace\mode-vbscript.js" />
+    <Content Include="public\control\ace\mode-velocity.js" />
+    <Content Include="public\control\ace\mode-verilog.js" />
+    <Content Include="public\control\ace\mode-vhdl.js" />
+    <Content Include="public\control\ace\mode-xml.js" />
+    <Content Include="public\control\ace\mode-xquery.js" />
+    <Content Include="public\control\ace\mode-yaml.js" />
+    <Content Include="public\control\ace\snippets\abap.js" />
+    <Content Include="public\control\ace\snippets\actionscript.js" />
+    <Content Include="public\control\ace\snippets\ada.js" />
+    <Content Include="public\control\ace\snippets\apache_conf.js" />
+    <Content Include="public\control\ace\snippets\applescript.js" />
+    <Content Include="public\control\ace\snippets\asciidoc.js" />
+    <Content Include="public\control\ace\snippets\assembly_x86.js" />
+    <Content Include="public\control\ace\snippets\autohotkey.js" />
+    <Content Include="public\control\ace\snippets\batchfile.js" />
+    <Content Include="public\control\ace\snippets\c9search.js" />
+    <Content Include="public\control\ace\snippets\cirru.js" />
+    <Content Include="public\control\ace\snippets\clojure.js" />
+    <Content Include="public\control\ace\snippets\cobol.js" />
+    <Content Include="public\control\ace\snippets\coffee.js" />
+    <Content Include="public\control\ace\snippets\coldfusion.js" />
+    <Content Include="public\control\ace\snippets\csharp.js" />
+    <Content Include="public\control\ace\snippets\css.js" />
+    <Content Include="public\control\ace\snippets\curly.js" />
+    <Content Include="public\control\ace\snippets\c_cpp.js" />
+    <Content Include="public\control\ace\snippets\d.js" />
+    <Content Include="public\control\ace\snippets\dart.js" />
+    <Content Include="public\control\ace\snippets\diff.js" />
+    <Content Include="public\control\ace\snippets\django.js" />
+    <Content Include="public\control\ace\snippets\dockerfile.js" />
+    <Content Include="public\control\ace\snippets\dot.js" />
+    <Content Include="public\control\ace\snippets\ejs.js" />
+    <Content Include="public\control\ace\snippets\erlang.js" />
+    <Content Include="public\control\ace\snippets\forth.js" />
+    <Content Include="public\control\ace\snippets\ftl.js" />
+    <Content Include="public\control\ace\snippets\gherkin.js" />
+    <Content Include="public\control\ace\snippets\gitignore.js" />
+    <Content Include="public\control\ace\snippets\glsl.js" />
+    <Content Include="public\control\ace\snippets\golang.js" />
+    <Content Include="public\control\ace\snippets\groovy.js" />
+    <Content Include="public\control\ace\snippets\haml.js" />
+    <Content Include="public\control\ace\snippets\handlebars.js" />
+    <Content Include="public\control\ace\snippets\haskell.js" />
+    <Content Include="public\control\ace\snippets\haxe.js" />
+    <Content Include="public\control\ace\snippets\html.js" />
+    <Content Include="public\control\ace\snippets\html_ruby.js" />
+    <Content Include="public\control\ace\snippets\ini.js" />
+    <Content Include="public\control\ace\snippets\jack.js" />
+    <Content Include="public\control\ace\snippets\jade.js" />
+    <Content Include="public\control\ace\snippets\java.js" />
+    <Content Include="public\control\ace\snippets\javascript.js" />
+    <Content Include="public\control\ace\snippets\json.js" />
+    <Content Include="public\control\ace\snippets\jsoniq.js" />
+    <Content Include="public\control\ace\snippets\jsp.js" />
+    <Content Include="public\control\ace\snippets\jsx.js" />
+    <Content Include="public\control\ace\snippets\julia.js" />
+    <Content Include="public\control\ace\snippets\latex.js" />
+    <Content Include="public\control\ace\snippets\less.js" />
+    <Content Include="public\control\ace\snippets\liquid.js" />
+    <Content Include="public\control\ace\snippets\lisp.js" />
+    <Content Include="public\control\ace\snippets\livescript.js" />
+    <Content Include="public\control\ace\snippets\logiql.js" />
+    <Content Include="public\control\ace\snippets\lsl.js" />
+    <Content Include="public\control\ace\snippets\lua.js" />
+    <Content Include="public\control\ace\snippets\luapage.js" />
+    <Content Include="public\control\ace\snippets\lucene.js" />
+    <Content Include="public\control\ace\snippets\makefile.js" />
+    <Content Include="public\control\ace\snippets\markdown.js" />
+    <Content Include="public\control\ace\snippets\matlab.js" />
+    <Content Include="public\control\ace\snippets\mel.js" />
+    <Content Include="public\control\ace\snippets\mushcode.js" />
+    <Content Include="public\control\ace\snippets\mysql.js" />
+    <Content Include="public\control\ace\snippets\nix.js" />
+    <Content Include="public\control\ace\snippets\objectivec.js" />
+    <Content Include="public\control\ace\snippets\ocaml.js" />
+    <Content Include="public\control\ace\snippets\pascal.js" />
+    <Content Include="public\control\ace\snippets\perl.js" />
+    <Content Include="public\control\ace\snippets\pgsql.js" />
+    <Content Include="public\control\ace\snippets\php.js" />
+    <Content Include="public\control\ace\snippets\plain_text.js" />
+    <Content Include="public\control\ace\snippets\powershell.js" />
+    <Content Include="public\control\ace\snippets\prolog.js" />
+    <Content Include="public\control\ace\snippets\properties.js" />
+    <Content Include="public\control\ace\snippets\protobuf.js" />
+    <Content Include="public\control\ace\snippets\python.js" />
+    <Content Include="public\control\ace\snippets\r.js" />
+    <Content Include="public\control\ace\snippets\rdoc.js" />
+    <Content Include="public\control\ace\snippets\rhtml.js" />
+    <Content Include="public\control\ace\snippets\ruby.js" />
+    <Content Include="public\control\ace\snippets\rust.js" />
+    <Content Include="public\control\ace\snippets\sass.js" />
+    <Content Include="public\control\ace\snippets\scad.js" />
+    <Content Include="public\control\ace\snippets\scala.js" />
+    <Content Include="public\control\ace\snippets\scheme.js" />
+    <Content Include="public\control\ace\snippets\scss.js" />
+    <Content Include="public\control\ace\snippets\sh.js" />
+    <Content Include="public\control\ace\snippets\sjs.js" />
+    <Content Include="public\control\ace\snippets\smarty.js" />
+    <Content Include="public\control\ace\snippets\snippets.js" />
+    <Content Include="public\control\ace\snippets\soy_template.js" />
+    <Content Include="public\control\ace\snippets\space.js" />
+    <Content Include="public\control\ace\snippets\sql.js" />
+    <Content Include="public\control\ace\snippets\stylus.js" />
+    <Content Include="public\control\ace\snippets\svg.js" />
+    <Content Include="public\control\ace\snippets\tcl.js" />
+    <Content Include="public\control\ace\snippets\tex.js" />
+    <Content Include="public\control\ace\snippets\text.js" />
+    <Content Include="public\control\ace\snippets\textile.js" />
+    <Content Include="public\control\ace\snippets\toml.js" />
+    <Content Include="public\control\ace\snippets\twig.js" />
+    <Content Include="public\control\ace\snippets\typescript.js" />
+    <Content Include="public\control\ace\snippets\vala.js" />
+    <Content Include="public\control\ace\snippets\vbscript.js" />
+    <Content Include="public\control\ace\snippets\velocity.js" />
+    <Content Include="public\control\ace\snippets\verilog.js" />
+    <Content Include="public\control\ace\snippets\vhdl.js" />
+    <Content Include="public\control\ace\snippets\xml.js" />
+    <Content Include="public\control\ace\snippets\xquery.js" />
+    <Content Include="public\control\ace\snippets\yaml.js" />
+    <Content Include="public\control\ace\theme-ambiance.js" />
+    <Content Include="public\control\ace\theme-chaos.js" />
+    <Content Include="public\control\ace\theme-chrome.js" />
+    <Content Include="public\control\ace\theme-clouds.js" />
+    <Content Include="public\control\ace\theme-clouds_midnight.js" />
+    <Content Include="public\control\ace\theme-cobalt.js" />
+    <Content Include="public\control\ace\theme-crimson_editor.js" />
+    <Content Include="public\control\ace\theme-dawn.js" />
+    <Content Include="public\control\ace\theme-dreamweaver.js" />
+    <Content Include="public\control\ace\theme-eclipse.js" />
+    <Content Include="public\control\ace\theme-github.js" />
+    <Content Include="public\control\ace\theme-idle_fingers.js" />
+    <Content Include="public\control\ace\theme-katzenmilch.js" />
+    <Content Include="public\control\ace\theme-kr.js" />
+    <Content Include="public\control\ace\theme-kuroir.js" />
+    <Content Include="public\control\ace\theme-merbivore.js" />
+    <Content Include="public\control\ace\theme-merbivore_soft.js" />
+    <Content Include="public\control\ace\theme-monokai.js" />
+    <Content Include="public\control\ace\theme-mono_industrial.js" />
+    <Content Include="public\control\ace\theme-pastel_on_dark.js" />
+    <Content Include="public\control\ace\theme-solarized_dark.js" />
+    <Content Include="public\control\ace\theme-solarized_light.js" />
+    <Content Include="public\control\ace\theme-terminal.js" />
+    <Content Include="public\control\ace\theme-textmate.js" />
+    <Content Include="public\control\ace\theme-tomorrow.js" />
+    <Content Include="public\control\ace\theme-tomorrow_night.js" />
+    <Content Include="public\control\ace\theme-tomorrow_night_blue.js" />
+    <Content Include="public\control\ace\theme-tomorrow_night_bright.js" />
+    <Content Include="public\control\ace\theme-tomorrow_night_eighties.js" />
+    <Content Include="public\control\ace\theme-twilight.js" />
+    <Content Include="public\control\ace\theme-vibrant_ink.js" />
+    <Content Include="public\control\ace\theme-xcode.js" />
+    <Content Include="public\control\ace\worker-coffee.js" />
+    <Content Include="public\control\ace\worker-css.js" />
+    <Content Include="public\control\ace\worker-html.js" />
+    <Content Include="public\control\ace\worker-javascript.js" />
+    <Content Include="public\control\ace\worker-json.js" />
+    <Content Include="public\control\ace\worker-lua.js" />
+    <Content Include="public\control\ace\worker-php.js" />
+    <Content Include="public\control\ace\worker-xquery.js" />
+    <Content Include="public\control\angular.min.js" />
+    <Content Include="public\control\app.js" />
+    <Content Include="public\control\jquery.min.js" />
+    <Content Include="public\control\main.js" />
+    <Content Include="public\snippets\css\9999_other_cool_things.scss" />
+    <Content Include="public\snippets\css\2015_variables_default.scss" />
+    <Content Include="public\snippets\css\5010_mixins.css" />
+    <Content Include="public\snippets\css\3020_extend_nested.scss" />
+    <Content Include="public\snippets\css\3010_extend.scss" />
+    <Content Include="public\snippets\css\3010_extend.css" />
+    <Content Include="public\snippets\css\2005_variables.css" />
+    <Content Include="public\snippets\css\1025_forward_nesting.css" />
+    <Content Include="public\snippets\css\1025_nesting_pseudo.css" />
+    <Content Include="public\snippets\css\1020_nesting_references.css" />
+    <Content Include="public\snippets\css\1015_nesting_properties.scss" />
+    <Content Include="public\snippets\css\2005_variables.scss" />
+    <Content Include="public\snippets\css\1001_comment.scss" />
+    <Content Include="public\control\velocity.min.js" />
+    <Content Include="public\snippets\css\1001_comment.css" />
+    <Content Include="public\snippets\css\1020_nesting_references.scss" />
+    <Content Include="public\snippets\css\1010_nesting.scss" />
+    <Content Include="public\snippets\css\1010_nesting.css" />
+    <Content Include="public\snippets\css\1015_nesting_properties.css" />
+    <Content Include="public\snippets\html\6010_directives.html" />
+    <Content Include="public\snippets\html\8010_color_math.html" />
+    <Content Include="public\snippets\html\8030_color_function_lighten.html" />
+    <Content Include="public\snippets\html\8030_color_function_mix.html" />
+    <Content Include="public\snippets\html\8030_color_function_more.html" />
+    <Content Include="public\snippets\html\8030_color_function_saturate.html" />
+    <Content Include="public\snippets\html\9999_sass_more.html" />
+    <Content Include="public\snippets\html\1000_sass_overview.html" />
+    <Content Include="public\snippets\html\1025_nesting.html" />
+    <Content Include="public\snippets\html\5010_mixins.html" />
+    <Content Include="public\snippets\html\3030_extend_danger.html" />
+    <Content Include="public\snippets\html\2020_scope.html" />
+    <Content Include="public\snippets\html\2005_variables.html" />
+    <Content Include="public\style\images\cat-claws.png" />
+    <Content Include="public\style\images\menu.png" />
+    <Content Include="public\style\images\sass-big.png" />
+    <Content Include="public\style\images\sass.png" />
+    <Content Include="public\style\images\screen.png" />
+    <Content Include="public\style\main.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\1025_nesting_pseudo.scss" />
+    <Content Include="public\snippets\css\1025_forward_nesting.scss" />
+    <Content Include="public\snippets\css\2010_variables_override.scss" />
+    <Content Include="public\snippets\css\2015_variables_default_ans.scss" />
+    <Content Include="public\snippets\css\2050_variable_types.scss" />
+    <Content Include="public\snippets\css\2025_variables_scope_error.scss" />
+    <Content Include="public\snippets\css\2020_variables_scope.scss" />
+    <Content Include="public\snippets\css\2030_variables_wedge.scss" />
+    <Content Include="public\snippets\css\3030_extend_danger.scss" />
+    <Content Include="public\snippets\css\4010_placeholder.scss" />
+    <Content Include="public\snippets\css\5010_mixins.scss" />
+    <Content Include="public\snippets\css\5020_mixins_argument.scss" />
+    <Content Include="public\snippets\css\5030_mixins_argument_default.scss" />
+    <Content Include="public\snippets\css\5040_mixins_multiple_argument.scss" />
+    <Content Include="public\snippets\css\5040_mixins_multiple_argument_defaults.scss" />
+    <Content Include="public\snippets\css\5045_mixins_multiple_argument_keyword.scss" />
+    <Content Include="public\snippets\css\5050_mixins_multiple_argument_comma.scss" />
+    <Content Include="public\snippets\css\5060_mixins_vs_placeholders.scss" />
+    <Content Include="public\snippets\snippets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\5051_mixins_multiple_argument_comma _dots.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\5061_mixins_vs_placeholders.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6010_function_directives.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\2090_test_your_knowledge.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\2090_test_your_knowledge_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\5090_test_your_knowledge.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\5090_test_your_knowledge_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6010_function_directives_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6020_logical_comparisons.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6025_logical_comparisons_else.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6030_lists.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6033_for.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6033_for_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\6036_while.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\7010_basic_math.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\7010_basic_math_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\7020_units.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\7020_units_different.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\7030_math_utilities.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8010_color_math.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8020_color_shorthand.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8020_color_shorthand_ans.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8030_color_function_lighten.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8030_color_function_saturate.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8030_color_function_mix.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\8030_color_function_more.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\snippets\css\0000_intro.scss" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29601</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ScssDemoPortal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

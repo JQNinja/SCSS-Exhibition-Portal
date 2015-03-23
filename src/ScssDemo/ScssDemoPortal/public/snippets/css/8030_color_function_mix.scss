@@ -1,0 +1,14 @@
+﻿$yellow: #FFFF00;
+$blue: #188fcc;
+
+.mix{
+    background-color: mix($yellow, $blue);
+}
+
+.mix-light {
+    background-color: mix($yellow, $blue, 30%);
+}
+
+.mix-heavy {
+    background-color: mix($yellow, $blue, 70%);
+}

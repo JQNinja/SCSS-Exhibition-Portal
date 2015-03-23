@@ -1,0 +1,23 @@
+﻿@mixin link-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+%link-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+
+.button-link {
+    @include link-button;
+}
+
+.another-button-link {
+    @include link-button;
+}

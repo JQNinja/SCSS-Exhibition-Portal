@@ -1,0 +1,14 @@
+﻿$color: #767676;
+
+.default{
+    background-color: $color;
+}
+
+.darker{
+    background-color: darken($color, 25%);
+}
+
+.lighter{
+    background-color: lighten($color, 25%);
+}
+

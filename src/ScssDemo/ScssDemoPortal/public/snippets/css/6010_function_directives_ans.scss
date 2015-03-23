@@ -1,0 +1,4 @@
+﻿/* Sass has a built in math function that does the same thing */
+.content {
+    width: percentage(640px/960px);
+}

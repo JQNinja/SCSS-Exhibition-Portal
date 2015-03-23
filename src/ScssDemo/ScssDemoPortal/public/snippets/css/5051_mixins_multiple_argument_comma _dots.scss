@@ -1,0 +1,9 @@
+﻿@mixin baseFont($fontFamily...) {
+    font-family: $fontFamily;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.alternative-font {
+    @include baseFont(Helvetica, Arial, sans-serrif);
+}

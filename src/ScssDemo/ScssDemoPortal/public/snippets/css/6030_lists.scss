@@ -1,0 +1,8 @@
+﻿$co-workers: adrian joe jack per dennis keiner;
+
+@each $co-worker in $co-workers{
+    .engineer-#{$co-worker}{
+        background-image: 
+            url(images/engineer-#{$co-worker}.png);
+    }
+} 

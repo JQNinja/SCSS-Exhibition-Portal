@@ -1,0 +1,8 @@
+﻿$background-color: #CCCCCC;
+
+.overlay{
+    background-color: $background-color;
+    background-color: rgba($background-color, 0.8);
+    border-color: #FACADE;
+    border-color: rgba(#FACADE, 0.8);
+}

@@ -1,0 +1,7 @@
+﻿@function respondify($target, $context) {
+    @return ($target / $context) * 100%;
+}
+
+.content {
+    width: respondify(640px, 960px);
+}

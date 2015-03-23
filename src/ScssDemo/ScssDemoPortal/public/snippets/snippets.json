@@ -1,0 +1,249 @@
+﻿{
+    "snippets": [
+        {
+            "title": "Comments",
+            "desc": "Some comments we want to keep to ourselves. Sass adds single line comments <code>//</code> that are not in the final output.",
+            "ask": "1001_comment.css",
+            "ans": "1001_comment.scss",
+            "slide": "1000_sass_overview.html",
+            "openFirst":  true
+        },
+        {
+            "title": "Nesting",
+            "desc": "Sass allows nesting for a visual hierarchy",
+            "ask": "1010_nesting.css",
+            "ans": "1010_nesting.scss"
+        },
+        {
+            "title": "Nesting Properties",
+            "desc": "Some properties with matching namespaces can be nested",
+            "ask": "1015_nesting_properties.css",
+            "ans": "1015_nesting_properties.scss"
+        },
+        {
+            "title": "Nesting References",
+            "desc": "The ampersand symbol <code>&amp;</code> references the parent property",
+            "ask": "1020_nesting_references.css",
+            "ans": "1020_nesting_references.scss"
+        },
+        {
+            "title": "Nesting Pseudo Selectors",
+            "desc": "The ampersand symbol <code>&amp;</code> references the parent property for pseudo selectors too",
+            "ask": "1025_nesting_pseudo.css",
+            "ans": "1025_nesting_pseudo.scss"
+        },
+        {
+            "title": "Forward Nesting <strong>DANGER!</strong>",
+            "desc": "a.k.a. I'm my own grandpa nesting. The ampersand symbol <code>&amp;</code> can be used for plugging in stuff anywhere. ",
+            "ask": "1025_forward_nesting.css",
+            "ans": "1025_forward_nesting.scss",
+            "slide":  "1025_nesting.html"
+        },
+        {
+            "title": "Variables",
+            "desc": "Do I really need to tell you how valuable variables are?",
+            "ask": "2005_variables.css",
+            "ans": "2005_variables.scss",
+            "slide": "2005_variables.html"
+        },
+        {
+            "title": "Variable Types",
+            "desc": "Boolean, number, color, string, list, null",
+            "ask": "2050_variable_types.scss"
+        },
+        {
+            "title": "Variables - Changing",
+            "desc": "Any subsequent assignments override the old value",
+            "ask": "2010_variables_override.scss"
+        },
+        {
+            "title": "Variables - Default",
+            "desc": "<code>!default</code> flag tells the compiler, \"if this variable isn't assigned, use this value\"",
+            "ask": "2015_variables_default.scss",
+            "ans": "2015_variables_default_ans.scss"
+        },
+        {
+            "title": "Variables - Scope",
+            "desc": "Variable access is determined by declaration scope. <i>Existing</i> variables set within a declaration block <code>{ }</code> are changed globally",
+            "ask": "2020_variables_scope.scss"
+        },
+        {
+            "title": "Variables - Scope",
+            "desc": "<i>New</i> variables set within a declaration block <code>{ }</code> can't be used anywhere else",
+            "ask": "2025_variables_scope_error.scss"
+        },
+        {
+            "title": "Variables - Wedging",
+            "desc": "Use the pound-bracket syntax <code>#{$variable}</code> to wedge variables nearly anywhere",
+            "ask": "2030_variables_wedge.scss"
+        },
+        {
+            "title": "<em>Test Your Knowledge<em>",
+            "desc": "Using what you've learned so far, how would you refactor this CSS using Sass",
+            "ask": "2090_test_your_knowledge.scss",
+            "ans":  "2090_test_your_knowledge_ans.scss"
+        },
+        {
+            "title": "Extend",
+            "desc": "Easily combine selectors with <code>@extend</code>",
+            "ask": "3010_extend.css",
+            "ans": "3010_extend.scss"
+        },
+        {
+            "title": "Extend Nested Elements",
+            "desc": "<code>@extend</code> can be used with nested elements as well",
+            "ask": "3020_extend_nested.scss"
+        },
+        {
+            "title": "Extend <strong>DANGER!</strong>",
+            "desc": "<code>@extend</code> can have unintended consequences. Notice the extra declaration <code>.navigation .square</code> with a property of <code>text-transform: lowercase; </code>",
+            "ask": "3030_extend_danger.scss",
+            "slide" :  "3030_extend_danger.html"
+        },
+        {
+            "title": "Placeholders",
+            "desc": "Placeholder declarations can be extended, but aren't output in the compiled CSS. Placeholders begin with the percent sign <code>%</code>",
+            "ask": "4010_placeholder.scss"
+        },
+        {
+            "title": "Mixins",
+            "desc": "Some items in CSS are tedious to write and maintain. Mixins allow you group declarations for reuse by using <code>@mixin</code> and <code>@include</code>",
+            "ask": "5010_mixins.css",
+            "ans": "5010_mixins.scss",
+            "slide":  "5010_mixins.html"
+        },
+        {
+            "title": "Mixins with Arguments",
+            "desc": "It's possible to pass values into a mixin to potentially change the output",
+            "ask": "5020_mixins_argument.scss"
+        },
+        {
+            "title": "Mixins with Default Arguments",
+            "desc": "Default values can be set for arguments",
+            "ask": "5030_mixins_argument_default.scss"
+        },
+        {
+            "title": "Mixins with Multiple Arguments",
+            "desc": "Mixins can have multiple arguments",
+            "ask": "5040_mixins_multiple_argument.scss"
+        },
+        {
+            "title": "Mixins with Multiple Arguments and Defaults",
+            "desc": "Mixins with multiple arguments can have defaults",
+            "ask": "5040_mixins_multiple_argument_defaults.scss",
+            "ans":  "5045_mixins_multiple_argument_keyword.scss"
+        },
+        {
+            "title": "Mixins and Values With Commas",
+            "desc": "Sometimes commas occur in CSS property values. You can handle this in Sass using three-dots <code>...</code> notation.",
+            "ask": "5050_mixins_multiple_argument_comma.scss",
+            "ans":  "5051_mixins_multiple_argument_comma _dots.scss"
+        },
+        {
+            "title": "Mixins vs. Placeholders",
+            "desc": "Why would you ever use a placeholder once you know how mixins work? There is a little extra Sass magic in the placeholder",
+            "ask": "5060_mixins_vs_placeholders.scss",
+            "ans":  "5061_mixins_vs_placeholders.scss"
+        },
+        {
+            "title": "<em>Test Your Knowledge<em>",
+            "desc": "Using what you've learned so far, how would you refactor this CSS using Sass",
+            "ask": "5090_test_your_knowledge.scss",
+            "ans":  "5090_test_your_knowledge_ans.scss"
+        },
+        {
+            "title": "Function Directives",
+            "desc": "Functions offer more flexibility than mixins. Unlike mixins, a <code>@function(){ }</code> requires the parentheses <code>()</code>. Calling a function doesn't require any special keywords. The argument rules are the same.",
+            "ask": "6010_function_directives.scss",
+            "ans": "6010_function_directives_ans.scss",
+            "slide": "6010_directives.html",
+            "openFirst":  true
+        },
+        {
+            "title": "Logical Comparisons",
+            "desc": "<code>@if</code> allows us to use logical comparisons between any two values using <code>==</code> or <code>!=</code>. It also allows us to compare numbers using <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, and <code>&gt;=</code>.",
+            "ask": "6020_logical_comparisons.scss"
+        },
+        {
+            "title": "Multiple Logical Comparisons",
+            "desc": "<code>@else</code> and <code>@else if</code> allows for multiple comparisons. <code>and</code>, <code>or</code>, and <code>not</code> operators for boolean values is also supported.",
+            "ask": "6025_logical_comparisons_else.scss"
+        },
+        {
+            "title": "Using Lists",
+            "desc": "The <code>@each</code> directive allows for looping through lists",
+            "ask": "6030_lists.scss"
+        },
+        {
+            "title": "For Loops",
+            "desc": "<code>@for</code> loops execute a block of code for a given range.",
+            "ask": "6033_for.scss",
+            "ans": "6033_for_ans.scss"
+        },
+        {
+            "title": "While Loops",
+            "desc": "<code>@while</code> loops execute a block of code until a breaking condition is met.",
+            "ask": "6036_while.scss"
+        },
+        {
+            "title": "Basic Math",
+            "desc": "Sass supports common number operators addition <code>+</code>, subtraction <code>-</code>, multiplication <code>*</code>, division <code>/</code>, and modulo <code>%</code>. Since <code>/</code> is used in some CSS properties, division requires some context.",
+            "ask": "7010_basic_math.scss",
+            "ans": "7010_basic_math_ans.scss"
+        },
+        {
+            "title": "Units in Expressions",
+            "desc": "Sass will attempt combining units if they differ, but won't attempt to combine some types.",
+            "ask": "7020_units.scss",
+            "ans": "7020_units_different.scss"
+        },
+        {
+            "title": "Math Utilities",
+            "desc": "Built in math utility functions: <code>round([number])</code>, <code>ceil([number])</code>, <code>floor([number])</code>, <code>abs([number])</code>, <code>min([number list])</code>, <code>max([number list])</code>, and <code>percentage([number])</code>.",
+            "ask": "7030_math_utilities.scss"
+        },
+        {
+            "title": "Color Math",
+            "desc": "It is possible to perform mathematical operations on color values. When adding or subtracting the operations are performed on the RGB number pairs.",
+            "ask": "8010_color_math.scss",
+            "slide":  "8010_color_math.html"
+        },
+        {
+            "title": "Color Shorthand",
+            "desc": "Converting numbers made easy",
+            "ask": "8020_color_shorthand.scss",
+            "ans": "8020_color_shorthand_ans.scss"
+        },
+        {
+            "title": "Color Functions - Darker/Lighter",
+            "desc": "Use the <code>darken()</code> and <code>lighten()</code> functions to add or remove shading.",
+            "ask": "8030_color_function_lighten.scss",
+            "slide": "8030_color_function_lighten.html"
+        },
+        {
+            "title": "Color Functions - Saturation",
+            "desc": "Use the <code>saturate()</code> and <code>desaturate()</code> functions to add or remove saturation.",
+            "ask": "8030_color_function_saturate.scss",
+            "slide": "8030_color_function_saturate.html"
+        },
+        {
+            "title": "Color Functions - Mix",
+            "desc": "Use the <code>mix()</code> function to combine 2 colors. The optional third argument, weight, is the percentage of the first color that should be included in the returned color. The default is 50%.",
+            "ask": "8030_color_function_mix.scss",
+            "slide": "8030_color_function_mix.html"
+        },
+        {
+            "title": "Color Functions - More",
+            "desc": "Some other color functions include: <code>grayscale()</code> converts a color to grayscale, <code>compliment()</code> returns the complement of a color, and <code>invert()</code> returns the inverse of a color. Plus many, many more.",
+            "ask": "8030_color_function_more.scss",
+            "slide": "8030_color_function_more.html"
+        },
+        {
+            "title": "Much, Much More",
+            "desc": "There are so many other powerful resources in Sass.",
+            "ask": "9999_other_cool_things.scss",
+            "slide":  "9999_sass_more.html",
+            "openFirst":  true
+        }
+    ]
+}

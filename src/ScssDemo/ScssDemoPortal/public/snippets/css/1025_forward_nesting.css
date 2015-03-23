@@ -1,0 +1,12 @@
+﻿.parent {
+    background-color: white;
+    border: solid green 2px;
+}
+
+.parent .title {
+    font-size: 1.5em;
+}
+
+.grandparent .parent{
+    background-color: gray;
+}

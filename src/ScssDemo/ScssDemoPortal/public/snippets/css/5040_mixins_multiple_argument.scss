@@ -1,0 +1,12 @@
+﻿@mixin button($rad, $fontColor, $bgColor) {
+    background: $bgColor;
+    border-radius: $rad;
+    color: $fontColor;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    padding: 5px 10px;
+}
+
+.search-button {
+    @include button(5px, #123456, #65a9d7);
+}

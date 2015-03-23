@@ -1,0 +1,20 @@
+﻿.add {
+    background-color: #123456 + #654321;
+}
+
+.subtract {
+    background-color: #777777 - #123456;
+}
+
+.multiply {
+    background-color: #212121 * 2;
+}
+
+.divide {
+    background-color: (#CC9966 / 3);
+}
+
+.unexpected {
+    background-color: #1111EE - #999999;
+    color: #EEEE11 + #999999;
+}

@@ -1,0 +1,16 @@
+﻿@mixin button(
+    $rad: 5px, 
+    $fontColor: #123456, 
+    $bgColor: #65a9d7 ) {
+
+    background: $bgColor;
+    border-radius: $rad;
+    color: $fontColor;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    padding: 5px 10px;
+}
+
+.search-button {
+    @include button($bgColor: PapayaWhip);
+}

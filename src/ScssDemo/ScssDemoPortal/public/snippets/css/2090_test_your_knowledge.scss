@@ -1,0 +1,26 @@
+﻿/* Navigation */
+.nav {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: Helvetica,Tahoma,sans-serif;
+    color: #000;
+    background-color: #CCC;
+}
+.nav .heading {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav ul {
+    list-style-type: none;
+}
+.nav li a {
+    display: inline-block;
+    font-size: 1em;
+    color: #ABBA76;
+}
+/* ToDo: Add focus state for accessibility purposes */
+.nav li a:hover {
+    font-weight: bold;
+    color: #000;
+    outline: #ABBA76 solid 2px;
+}

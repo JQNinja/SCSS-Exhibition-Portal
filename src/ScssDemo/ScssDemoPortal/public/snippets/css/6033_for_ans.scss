@@ -1,0 +1,12 @@
+﻿.floating-icon {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    left: 0;
+
+    @for $i from 1 through 4 {
+        &.icon-#{$i} {
+            top: $i * 50px;
+        }
+    }
+}

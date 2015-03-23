@@ -1,0 +1,11 @@
+*.suo
+*thumbs.db
+src/ScssDemo/ScssDemoPortal.sln.DotSettings.user
+src/ScssDemo/ScssDemoPortal/ScssDemoPortal.csproj.user
+src/ScssDemo/ScssDemoPortal.Tests.csproj.user
+src/ScssDemo/ScssDemoPortal/bin/
+src/ScssDemo/ScssDemoPortal/obj/
+src/ScssDemo/ScssDemoPortal.Tests/bin/
+src/ScssDemo/ScssDemoPortal.Tests/obj/
+src/ScssDemo/ScssDemoPortal/App_Data/uploads/
+

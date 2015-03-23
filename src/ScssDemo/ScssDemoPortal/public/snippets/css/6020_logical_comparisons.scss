@@ -1,0 +1,7 @@
+﻿$skin: chrome;
+
+body {
+    @if $skin == chrome{
+        background-color: silver;
+    }
+}

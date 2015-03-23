@@ -1,0 +1,15 @@
+﻿.responsive-box {
+    border: black solid 2px;
+    padding: 10px;
+    width: 33.3333%;
+    height: auto;
+    /* border radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    /* box sizing */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

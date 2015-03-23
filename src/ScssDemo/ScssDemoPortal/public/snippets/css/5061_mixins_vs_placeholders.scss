@@ -1,0 +1,22 @@
+﻿@mixin link-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+%link-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+.button-link {
+    @extend %link-button;
+}
+
+.another-button-link {
+    @extend %link-button;
+}

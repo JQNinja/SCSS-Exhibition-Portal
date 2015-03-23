@@ -1,0 +1,8 @@
+﻿/* Custom overrides */
+/* Whose stupid idea was this?!?!? */
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: inherit;
+}
+

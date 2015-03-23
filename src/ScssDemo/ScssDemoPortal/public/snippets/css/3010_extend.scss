@@ -1,0 +1,24 @@
+﻿.button {
+    background: #65a9d7;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Georgia, serif;
+}
+
+    .button:hover {
+        background: #28597a;
+        color: #ccc;
+    }
+
+    .button:active {
+        background: #1b435e;
+    }
+
+
+.search-button {
+    @extend .button;
+    border-radius: 0;
+    color: #123456;
+}

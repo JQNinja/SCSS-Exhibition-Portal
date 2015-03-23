@@ -1,0 +1,7 @@
+﻿$size: 6px;
+body {
+    font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
+    margin: (1em / 2); // parenthesis
+    padding: 1em * 2 / 3; // another operator
+    border-width: $size / 3; // a variable
+}

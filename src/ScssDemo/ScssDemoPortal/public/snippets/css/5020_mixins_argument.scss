@@ -1,0 +1,23 @@
+﻿@mixin border-radius($rad) {
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -ms-border-radius: $rad;
+    border-radius: $rad;
+}
+
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}
+
+.responsive-box {
+    border: black solid 2px;
+    padding: 10px;
+    width: 33.3333%;
+    height: auto;
+    /* border radius */
+    @include border-radius(10px);
+    /* box sizing */
+    @include box-sizing(border-box);
+}

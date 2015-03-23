@@ -1,0 +1,20 @@
+﻿.box {
+    background-color: #BADA55;
+    color: #501ACE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle {
+    border: 1px #BADA55 solid;
+    background-color: #501ACE;
+}
+
+.trapazoid {
+    background-color: #501ACE;
+    color: #BADA55;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trapazoid:focus {
+    outline: #BADA55;
+}

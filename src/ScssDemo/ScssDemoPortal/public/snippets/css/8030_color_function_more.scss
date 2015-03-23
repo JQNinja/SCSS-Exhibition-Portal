@@ -1,0 +1,13 @@
+﻿$blue: #188fcc;
+
+.grayscale{
+    background-color: grayscale($blue);
+}
+
+.complement {
+    background-color: complement($blue);
+}
+
+.invert {
+    background-color: invert($blue);
+}

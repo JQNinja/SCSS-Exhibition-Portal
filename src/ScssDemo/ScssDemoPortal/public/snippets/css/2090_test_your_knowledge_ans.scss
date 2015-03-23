@@ -1,0 +1,39 @@
+﻿/* Navigation */
+
+$base-font-family:  Helvetica,Tahoma,sans-serif;
+$base-color-dark: #000;
+$highlight-color: #ABBA76;
+
+.nav {
+    font: {
+        size: 1em;
+        weight: normal;
+        family: $base-font-family;
+    }
+
+    color: $base-color-dark;
+    background-color: #CCC;
+
+    .heading {
+        font : {
+            size: 1.5em;
+            weight: bold;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li a {
+        display: inline-block;
+        font-size: 1em;
+        color: $highlight-color;
+
+        &:hover, &:focus {
+            font-weight: bold;
+            color: $base-color-dark;
+            outline: $highlight-color solid 2px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+﻿$dir: left;
+
+.popup{
+    position:absolute;
+    #{$dir}: 0.5em;
+    margin-#{$dir}: 1em;
+}

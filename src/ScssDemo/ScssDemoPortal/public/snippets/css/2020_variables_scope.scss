@@ -1,0 +1,11 @@
+﻿$font-color: Red;
+.box {
+    $font-color: Green;
+    color: $font-color;
+}
+
+
+.circle {
+    color: $font-color;
+}
+

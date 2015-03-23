@@ -1,0 +1,16 @@
+﻿$i: 2;
+$level: 20px;
+
+.floating-icon {
+    position: fixed;
+    width: 40px;
+    left: 0;
+
+    @while $i <= 6 {
+        &.icon-#{$i} {
+            top: ($i - 2) * $level;
+            height: $i * $level;
+        }
+        $i: $i + 2;
+    }//end while
+}

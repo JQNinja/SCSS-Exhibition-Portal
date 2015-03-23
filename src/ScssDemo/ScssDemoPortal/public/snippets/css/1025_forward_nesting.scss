@@ -1,0 +1,13 @@
+﻿.parent {
+    background-color: white;
+    border: solid green 2px;
+
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .grandparent & {
+        background-color: gray;
+    }
+}

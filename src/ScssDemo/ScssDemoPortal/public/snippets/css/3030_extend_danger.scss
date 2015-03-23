@@ -1,0 +1,13 @@
+﻿.box {
+ background-color: greenyellow;
+ border: 1px solid honeydew;
+ font-size: 0.8em;
+}
+
+.square {
+ @extend .box;
+ background-color: orangered;
+}
+
+//.navigation .box { text-transform: lowercase; }
+

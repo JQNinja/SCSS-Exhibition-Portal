@@ -1,0 +1,13 @@
+﻿$skin: earthtone;
+
+body {
+    @if $skin == chrome{
+        background-color: Silver;
+    }
+    @else if $skin == earthtone or $skin == earth {
+        background-color: BurlyWood;
+    }
+    @else{
+        background-color: Snow;
+    }
+}

@@ -1,0 +1,12 @@
+﻿.parent {
+    background-color: white;
+    border: solid green 2px;
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    &.enhanced {
+        border-color: red;
+    }
+}

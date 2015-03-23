@@ -1,0 +1,21 @@
+﻿h1{
+    font-size: round(2.5em);
+}
+h2{
+    font-size: ceil(1.00001em);
+}
+h3{
+    font-size: floor(1.9999em);
+}
+h4{
+    font-size: abs(-0.8em);
+}
+h5{
+    font-size: min(2em, 0.8em, 3em);
+}
+h6{
+    font-size: max(-0.8em, 0.2em, 0.7em);
+}
+.col {
+    width: percentage(240/960);
+}

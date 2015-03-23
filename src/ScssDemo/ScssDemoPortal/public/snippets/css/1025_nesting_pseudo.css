@@ -1,0 +1,12 @@
+﻿button {
+    background-color: gray;
+}
+
+button:hover,
+button:focus {
+    background-color: darkgray;
+}
+
+button:active {
+    background-color: DimGray ;
+}
