@@ -20,3 +20,7 @@ A C# MVC.Net app that facilitates the demonstration of SCSS
 ### Who do I talk to? ###
 
 * mr.steven.miller@gmail.com
+
+### License ###
+
+* MIT
